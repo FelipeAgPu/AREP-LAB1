@@ -30,6 +30,7 @@ public class StocksConnector {
         con.setRequestProperty("User-Agent", USER_AGENT);
 
         int responseCode = con.getResponseCode();
+        System.out.println("Requesting to: " + obj.toString());
         System.out.println("GET Response Code :: " + responseCode);
 
         if (responseCode == HttpURLConnection.HTTP_OK) {
