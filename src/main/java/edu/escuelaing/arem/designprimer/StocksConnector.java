@@ -67,7 +67,7 @@ public class StocksConnector {
             }
             return String.format(ALPHA_URL, type, company, ALPHA_KEY);
         }else if (provider.equals(POLYGON)){
-            Date date = DateUtils.addDays(new Date(), -1);
+            Date date = DateUtils.addDays(new Date(), -3);
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
             return String.format(POLYGON_URL, company, sdf.format(date), POLYGON_KEY);
         }
